@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <!-- Header Box -->
+    <TextView
+        android:id="@+id/home_title"
+        android:layout_width="372dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="36dp"
+        android:layout_centerHorizontal="true"
+        android:background="#6C63FF"
+        android:gravity="center"
+        android:text="Trang chủ"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="italic|bold" />
+
+    <!-- First Notice Box -->
+    <TextView
+        android:id="@+id/header1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/home_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:background="#6C63FF"
+        android:gravity="center"
+        android:text="Thông báo mới"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="italic|bold" />
+
+    <!-- Second Notice Box -->
+
+    <RelativeLayout
+        android:id="@+id/notice1Container"
+        android:layout_width="412dp"
+        android:layout_height="172dp"
+        android:layout_below="@id/header1"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:background="#f0f0f0"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Thông báo về việc thu chi phí: Từ ngày 20-27/07/2024"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="76dp"
+            android:text="Thông báo về việc thu chi phí: Từ ngày 20-27/07/2024"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/header2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/notice1Container"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:background="#6C63FF"
+        android:gravity="center"
+        android:text="Hướng dẫn"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="italic|bold" />
+
+    <RelativeLayout
+        android:id="@+id/notice2Container"
+        android:layout_width="412dp"
+        android:layout_height="172dp"
+        android:layout_below="@id/header2"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:background="#f0f0f0"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Hướng dẫn sinh viên thành toán online"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="76dp"
+            android:text="Hướng dẫn sinh viên cập nhật thông tin đầy đủ trên ứng dụng"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

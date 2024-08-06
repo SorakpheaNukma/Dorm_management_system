@@ -13,6 +13,7 @@
     <string name="service_button">Dịch vụ</string>
     <string name="device_button">Thiết bị</string>
     <string name="logout_button">Đăng xuất</string>
+    <string name="h_y_l_c_theo_y_u_c_u_c_a_b_n">Hãy lọc theo yêu cấu của bạn</string>
 
 
     <string-array name="house_options">

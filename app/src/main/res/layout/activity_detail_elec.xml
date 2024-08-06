@@ -1,0 +1,178 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/home_title"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="36dp"
+        android:background="#6C63FF"
+        android:gravity="center"
+        android:text="ĐIỆN NƯỚC"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="italic|bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="28dp"
+        android:text="Hãy lọc theo yêu cấu của bạn"
+        android:textSize="16sp"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="28dp"
+        android:text="Nhà"
+        android:textSize="16sp"
+        android:textColor="@android:color/black" />
+
+    <Spinner
+        android:id="@+id/spinner_house"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="180dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="28dp"
+        android:text="Tấng"
+        android:textSize="16sp"
+        android:textColor="@android:color/black" />
+
+    <Spinner
+        android:id="@+id/spinner_floor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="180dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="28dp"
+        android:text="Tháng"
+        android:textSize="16sp"
+        android:textColor="@android:color/black" />
+
+    <Spinner
+        android:id="@+id/spinner_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="180dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:text="Danh sách điện nước"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#D3D0FF"
+        android:orientation="vertical">
+
+        <!-- Profile Section 1 -->
+        <RelativeLayout
+            android:id="@+id/profile_section_1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/profile_image_view_1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:background="#d3d0ff"
+                android:clipToOutline="true"
+                android:src="@drawable/home" />
+
+            <TextView
+                android:id="@+id/profile_text_view_1"
+                android:layout_width="302dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:paddingEnd="20dp"
+                android:text="Phòng: 101 \nSố điện cũ : 123kmh\nSố điện mới : 123kmh\nSố nước cũ : 123km3\nSố nước mới : 123km3"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <!-- Profile Section 2 -->
+        <RelativeLayout
+            android:id="@+id/profile_section_2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="12dp">
+
+            <ImageView
+                android:id="@+id/profile_image_view_2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:background="#d3d0ff"
+                android:clipToOutline="true"
+                android:src="@drawable/home" />
+
+            <TextView
+                android:id="@+id/profile_text_view_2"
+                android:layout_width="302dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:paddingEnd="20dp"
+                android:text="Phòng: 102\nSố điện cũ : 123kmh\nSố điện mới : 123kmh\nSố nước cũ : 123km3\nSố nước mới : 123km3"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <!-- Profile Section 3 -->
+        <RelativeLayout
+            android:id="@+id/profile_section_3"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="12dp">
+
+            <ImageView
+                android:id="@+id/profile_image_view_3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:background="#d3d0ff"
+                android:clipToOutline="true"
+                android:src="@drawable/home" />
+
+            <TextView
+                android:id="@+id/profile_text_view_3"
+                android:layout_width="302dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:paddingEnd="20dp"
+                android:text="Phòng: 103 \nSố điện cũ : 123kmh\nSố điện mới : 123kmh\nSố nước cũ : 123km3\nSố nước mới : 123km3"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

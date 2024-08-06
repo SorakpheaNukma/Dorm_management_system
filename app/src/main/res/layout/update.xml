@@ -1,6 +1,4 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="428dp"
-    android:layout_height="926dp"
     android:background="#FFFFFF">
 
     <!-- Top Center Box with Title -->
@@ -9,7 +7,6 @@
         android:layout_width="372dp"
         android:layout_height="56dp"
         android:layout_marginTop="36dp"
-        android:layout_centerHorizontal="true"
         android:background="#6c63ff">
 
         <TextView
@@ -32,8 +29,6 @@
         android:id="@+id/filter_instruction"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hãy lọc theo yêu cầu của bạn"
-        android:layout_marginTop="116dp"
         android:layout_marginStart="28dp"
         android:textColor="#000000"
         android:textSize="16sp" />
@@ -42,8 +37,6 @@
     <RelativeLayout
         android:layout_width="372dp"
         android:layout_height="56dp"
-        android:layout_marginTop="148dp"
-        android:layout_marginStart="28dp">
 
         <TextView
             android:layout_width="138dp"
@@ -65,8 +58,6 @@
     <RelativeLayout
         android:layout_width="372dp"
         android:layout_height="56dp"
-        android:layout_marginTop="216dp"
-        android:layout_marginStart="28dp">
 
         <TextView
             android:layout_width="138dp"
@@ -89,7 +80,6 @@
         android:layout_width="372dp"
         android:layout_height="25dp"
         android:layout_marginTop="284dp"
-        android:layout_marginStart="28dp"
         android:background="#6c63ff">
 
         <TextView
@@ -97,8 +87,6 @@
             android:layout_height="wrap_content"
             android:text="Danh sách sinh viên đã đóng tiền dịch vụ"
             android:textColor="#FFFFFF"
-            android:textSize="20sp"
-            android:gravity="center_vertical" />
     </RelativeLayout>
 
     <!-- Save Button -->
@@ -108,7 +96,6 @@
         android:layout_height="56dp"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="28dp"
-        android:layout_marginBottom="151dp"
         android:background="#6c63ff"
         android:text="Lưu"
         android:textColor="#FFFFFF"

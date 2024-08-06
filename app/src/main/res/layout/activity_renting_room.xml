@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/white"
+    tools:context=".RentingRoomActivity">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="372dp"
+        android:layout_height="56dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:background="#6c63ff"
+        android:gravity="center"
+        android:text="PHÒNG ĐANG THUÊ"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"/>
+
+    <!-- Total Rooms Rented -->
+    <TextView
+        android:id="@+id/total_rooms"
+        android:layout_width="372dp"
+        android:layout_height="56dp"
+        android:layout_below="@id/header"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="28dp"
+        android:background="#6c63ff"
+        android:gravity="center"
+        android:text="Phòng đang đang thuê tổng: 4540 phòng"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"/>
+
+    <!-- Select House -->
+    <TextView
+        android:id="@+id/select_house_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/total_rooms"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="28dp"
+        android:text="Chọn nhà"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"/>
+
+    <!-- Room Information -->
+
+    <Spinner
+        android:id="@+id/select_house_spinner"
+        android:layout_width="199dp"
+        android:layout_height="56dp"
+        android:layout_below="@+id/total_rooms"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="18dp"
+        android:layout_toEndOf="@+id/select_house_label" />
+
+
+</RelativeLayout>

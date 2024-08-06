@@ -1,0 +1,42 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <!-- Top Bar -->
+    <TextView
+        android:id="@+id/headerText"
+        android:layout_width="372dp"
+        android:layout_height="56dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:background="#6c63ff"
+        android:text="SỬA CHỮA"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:textAlignment="center"
+        android:gravity="center"/>
+
+    <!-- Repair Requests List Title -->
+    <View
+        android:id="@+id/repair_list_title_bar"
+        android:layout_width="372dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="116dp"
+        android:background="#6c63ff"/>
+
+    <TextView
+        android:id="@+id/repair_list_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="116dp"
+        android:text="Danh sách yêu cầu sửa chữa từ sinh viên"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:gravity="center"/>
+</RelativeLayout>

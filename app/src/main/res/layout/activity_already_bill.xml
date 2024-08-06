@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- Header Box -->
+    <RelativeLayout
+        android:id="@+id/header_box"
+        android:layout_width="372dp"
+        android:layout_height="56dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:background="#6c63ff">
+
+        <TextView
+            android:id="@+id/header_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SINH VIÊN ĐÃ ĐÓNG TIỀN DỊCH VỤ"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            android:layout_centerInParent="true"
+            android:textAlignment="center"/>
+    </RelativeLayout>
+
+    <!-- List Title Box -->
+    <RelativeLayout
+        android:id="@+id/list_title_box"
+        android:layout_width="372dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/header_box"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="28dp"
+        android:background="#6c63ff">
+
+        <TextView
+            android:id="@+id/list_title_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Danh sách sinh viên đã đóng tiền dịch vụ"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <!-- Confirm Button Box -->
+    <RelativeLayout
+        android:id="@+id/confirm_box"
+        android:layout_width="372dp"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="36dp"
+        android:layout_marginStart="28dp"
+        android:background="#6c63ff">
+
+        <TextView
+            android:id="@+id/confirm_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xác nhận"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <!-- Profile Info Box -->
+    <RelativeLayout
+        android:id="@+id/profile_box"
+        android:layout_width="412dp"
+        android:layout_height="364dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="165dp"
+        android:background="@drawable/profile_box_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- Profile Section 1 -->
+            <RelativeLayout
+                android:id="@+id/profile_section_1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/profile_image_view_1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:background="#d3d0ff"
+                    android:clipToOutline="true"
+                    android:outlineProvider="background"
+                    android:src="@drawable/undraw_pic_profile_re_7g2h" />
+
+                <TextView
+                    android:id="@+id/profile_text_view_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="49dp"
+                    android:layout_toEndOf="@+id/profile_image_view_1"
+                    android:paddingEnd="20dp"
+                    android:text="Họ và tên: Mao Sorakpheanukma\nNhà : K1\nPhòng : 101\nNơi sinh : Campuchia"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <!-- Profile Section 2 -->
+            <RelativeLayout
+                android:id="@+id/profile_section_2"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="12dp">
+
+                <ImageView
+                    android:id="@+id/profile_image_view_2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/undraw_pic_profile_re_7g2h"
+                    android:background="#d3d0ff"
+                    android:clipToOutline="true"
+                    android:outlineProvider="background"/>
+
+                <TextView
+                    android:id="@+id/profile_text_view_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Họ và tên: Mao Sorakpheanukma\nNhà : K1\nPhòng : 101\nNơi sinh : Campuchia"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:paddingEnd="20dp"/>
+            </RelativeLayout>
+
+            <!-- Profile Section 3 -->
+            <RelativeLayout
+                android:id="@+id/profile_section_3"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="12dp">
+
+                <ImageView
+                    android:id="@+id/profile_image_view_3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/undraw_pic_profile_re_7g2h"
+                    android:background="#d3d0ff"
+                    android:clipToOutline="true"
+                    android:outlineProvider="background"/>
+
+                <TextView
+                    android:id="@+id/profile_text_view_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Họ và tên: Mao Sorakpheanukma\nNhà : K1\nPhòng : 101\nNơi sinh : Campuchia"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:paddingEnd="20dp"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

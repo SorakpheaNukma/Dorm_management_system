@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="372dp"
+        android:layout_height="56dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:background="#6c63ff"
+        android:gravity="center"
+        android:text="PHÒNG ĐANG SỬA CHỮA"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"/>
+
+    <!-- Total Rooms Available -->
+    <TextView
+        android:id="@+id/total_rooms"
+        android:layout_width="372dp"
+        android:layout_height="56dp"
+        android:layout_below="@id/header"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="28dp"
+        android:background="#6c63ff"
+        android:gravity="center"
+        android:text="Phòng đang trống tổng: 35 phòng"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"/>
+
+    <!-- Select House -->
+    <TextView
+        android:id="@+id/select_house_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/total_rooms"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="28dp"
+        android:text="Chọn nhà"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"/>
+
+    <!-- Room Information -->
+
+    <Spinner
+        android:id="@+id/select_house_spinner"
+        android:layout_width="199dp"
+        android:layout_height="56dp"
+        android:layout_below="@+id/total_rooms"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="46dp"
+        android:layout_toEndOf="@+id/select_house_label" />
+
+    <LinearLayout
+        android:id="@+id/room_info_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/select_house_label"
+        android:layout_margin="8dp"
+        android:orientation="vertical"/>
+
+    <!-- Students List Header -->
+    <TextView
+        android:id="@+id/students_list_header"
+        android:layout_width="372dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/room_info_container"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="28dp"
+        android:background="#6c63ff"
+        android:gravity="center"
+        android:text="Danh sách tất cả sinh viên"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"/>
+
+</RelativeLayout>

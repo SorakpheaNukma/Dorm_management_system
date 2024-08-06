@@ -1,0 +1,271 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="#6c63ff"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="THIẾT BỊ"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+
+    <!-- Room Labels -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="116dp"
+        android:text="Khu nhà K"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="580dp"
+        android:text="Khu nhà A"
+        android:textSize="16sp" />
+
+    <!-- Room Sections -->
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:orientation="horizontal">
+
+        <!-- Room K1 -->
+        <LinearLayout
+            android:layout_width="121dp"
+            android:layout_height="185dp"
+            android:layout_marginStart="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="K1"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="154dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/undraw_coming_home_re_ausc__1_" />
+        </LinearLayout>
+
+        <!-- Room K2 -->
+        <LinearLayout
+            android:layout_width="121dp"
+            android:layout_height="185dp"
+            android:layout_marginStart="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="K2"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="154dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/undraw_coming_home_re_ausc__1_" />
+        </LinearLayout>
+
+        <!-- Room K3 -->
+        <LinearLayout
+            android:layout_width="121dp"
+            android:layout_height="185dp"
+            android:layout_marginStart="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="K3"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="154dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/undraw_coming_home_re_ausc__1_" />
+
+        </LinearLayout>
+
+        <!-- Room K4 -->
+
+        <!-- Room K5 -->
+
+        <!-- Room K6 -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="624dp"
+        android:orientation="horizontal">
+
+        <!-- Room A1 -->
+        <LinearLayout
+            android:layout_width="121dp"
+            android:layout_height="185dp"
+            android:layout_marginStart="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="A1"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="154dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/undraw_coming_home_re_ausc__1_" />
+        </LinearLayout>
+
+        <!-- Room A2 -->
+        <LinearLayout
+            android:layout_width="121dp"
+            android:layout_height="185dp"
+            android:layout_marginStart="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="A2"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="154dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/undraw_coming_home_re_ausc__1_" />
+        </LinearLayout>
+
+        <!-- Room A3 -->
+        <LinearLayout
+            android:layout_width="121dp"
+            android:layout_height="185dp"
+            android:layout_marginStart="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="A3"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="154dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/undraw_coming_home_re_ausc__1_" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="121dp"
+        android:layout_height="185dp"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="6dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="K4"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="154dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/undraw_coming_home_re_ausc__1_" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="121dp"
+        android:layout_height="185dp"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="6dp"
+        android:layout_toEndOf="@+id/linearLayout3"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="K5"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="154dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/undraw_coming_home_re_ausc__1_" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="121dp"
+        android:layout_height="185dp"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="6dp"
+        android:layout_toEndOf="@+id/linearLayout4"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="K6"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="154dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/undraw_coming_home_re_ausc__1_" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- Header -->
+
+    <!-- Statistics Section -->
+
+    <!-- Service Items -->
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Service Item 1 -->
+
+        <!-- Service Item 2 -->
+
+        <!-- Service Item 3 -->
+
+    </LinearLayout>
+
+    <!-- Update Info Buttons -->
+
+    <!-- Image -->
+
+    <Button
+        android:id="@+id/view_info_button"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignTop="@+id/textView"
+        android:layout_marginTop="364dp"
+        android:background="#6c63ff"
+        android:text="Xem thông tin điện nước các phòng"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/update_info_button"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@+id/view_info_button"
+        android:layout_marginTop="18dp"
+        android:background="#6c63ff"
+        android:text="Cập nhật thông tin điện nước"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="12dp"
+        android:background="#6c63ff"
+        android:clipToOutline="true"
+        android:shapeAppearance="@style/RoundedCorners">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:paddingStart="16dp"
+            android:text="Sinh viên chưa đóng tiền dịch vụ"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="12dp"
+        android:background="#6c63ff"
+        android:clipToOutline="true"
+        android:shapeAppearance="@style/RoundedCorners">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:paddingStart="16dp"
+            android:text="Sinh viên chưa đóng đủ tiền dịch vụ"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_marginTop="27dp"
+        android:background="#6c63ff"
+        android:clipToOutline="true"
+        android:shapeAppearance="@style/RoundedCorners">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:paddingStart="16dp"
+            android:text="Sinh viên đã đóng tiền dịch vụ"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout5"
+        android:layout_marginTop="92dp"
+        android:background="#6c63ff"
+        android:padding="8dp"
+        android:text="Thống kê các thông tin dịch vụ"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        tools:ignore="UnknownId" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="27dp"
+        android:background="#6c63ff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="DỊCH VỤ"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>

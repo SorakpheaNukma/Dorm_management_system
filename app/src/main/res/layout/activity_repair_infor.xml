@@ -1,0 +1,195 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <!-- Top Bar -->
+    <TextView
+        android:id="@+id/headerText"
+        android:layout_width="372dp"
+        android:layout_height="56dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:background="#6c63ff"
+        android:text="THÔNG TIN SỬA CHỮA"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:textAlignment="center"
+        android:gravity="center"/>
+
+    <!-- Student Information Section -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerText"
+        android:layout_marginTop="29dp"
+        android:background="#6c63ff"
+        android:text="Thông tin sinh viên"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/student_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="151dp"
+        android:layout_marginStart="28dp"
+        android:text="Họ và Tên: "
+        android:textColor="@android:color/black"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/student_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="183dp"
+        android:layout_marginStart="28dp"
+        android:text="Mã số SV: "
+        android:textColor="@android:color/black"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/student_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="215dp"
+        android:layout_marginStart="28dp"
+        android:text="Số điện thoại: "
+        android:textColor="@android:color/black"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/student_room"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="247dp"
+        android:layout_marginStart="28dp"
+        android:text="Phòng: "
+        android:textColor="@android:color/black"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/student_house"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="279dp"
+        android:layout_marginStart="28dp"
+        android:text="Nhà: "
+        android:textColor="@android:color/black"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/student_device"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="311dp"
+        android:layout_marginStart="28dp"
+        android:text="Thiết bị: "
+        android:textColor="@android:color/black"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/student_issue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="343dp"
+        android:layout_marginStart="28dp"
+        android:text="Lý do: "
+        android:textColor="@android:color/black"
+        android:textSize="16sp"/>
+
+    <!-- Repair Information Section -->
+    <View
+        android:id="@+id/repair_info_section"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="387dp"
+        android:background="#6c63ff" />
+
+
+    <TextView
+        android:id="@+id/repair_info_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/student_issue"
+        android:layout_marginTop="23dp"
+        android:background="#6c63ff"
+        android:text="Thông tin sửa chữa"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/repair_manager_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="424dp"
+        android:layout_marginStart="28dp"
+        android:text="Họ và Tên: "
+        android:textColor="@android:color/black"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/repair_manager_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="456dp"
+        android:layout_marginStart="28dp"
+        android:text="Số điện thoại: "
+        android:textColor="@android:color/black"
+        android:textSize="16sp"/>
+
+    <!-- Dropdown Menu and Detailed Description -->
+    <TextView
+        android:id="@+id/repair_condition_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="488dp"
+        android:layout_marginStart="28dp"
+        android:text="Thực trạng:"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"/>
+
+    <!-- Placeholder for Dropdown Menu (Custom View) -->
+    <View
+        android:id="@+id/repair_dropdown_menu"
+        android:layout_width="147dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="488dp"
+        android:layout_marginStart="166dp"
+        android:background="#f0f0f0"/>
+
+    <TextView
+        android:id="@+id/repair_detail_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="556dp"
+        android:layout_marginStart="28dp"
+        android:text="Mô tả chi tiết:"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"/>
+
+    <View
+        android:id="@+id/repair_detail_container"
+        android:layout_width="372dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="588dp"
+        android:layout_marginStart="28dp"
+        android:background="#f0f0f0"/>
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="372dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="854dp"
+        android:text="Lưu"
+        android:background="#6c63ff"
+        android:textColor="@android:color/white"/>
+</RelativeLayout>

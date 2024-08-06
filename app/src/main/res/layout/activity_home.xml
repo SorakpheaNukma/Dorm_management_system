@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="81dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginStart="28dp"
+        android:src="@drawable/undraw_pic_profile_re_7g2h"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/admin_greeting"
+        android:layout_width="147dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="104dp"
+        android:layout_toEndOf="@+id/profile_image"
+        android:gravity="center"
+        android:text="Admin\nXin chào, Admin"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="italic|bold" />
+
+    <TextView
+        android:id="@+id/home_title"
+        android:layout_width="372dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="36dp"
+        android:layout_centerHorizontal="true"
+        android:background="#6C63FF"
+        android:gravity="center"
+        android:text="Trang chủ"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="italic|bold" />
+
+
+    <RelativeLayout
+        android:layout_width="407dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:padding="16dp">
+
+        <FrameLayout
+            android:id="@+id/dashboard_frame"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="188dp"
+            android:background="#D3D0FF">
+
+            <ImageView
+                android:id="@+id/dashboard_background"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="top|center"
+                android:scaleType="fitXY"
+                android:src="@drawable/dashboard"
+                app:tint="#6C63FF" />
+
+            <TextView
+                android:id="@+id/dashboard_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="8dp"
+                android:text="Dashboard"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="italic|bold" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/repair_frame"
+            android:layout_width="150dp"
+            android:layout_height="152dp"
+            android:layout_below="@+id/dashboard_frame"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="10dp"
+            android:background="#D3D0FF">
+
+            <ImageView
+                android:id="@+id/repair_background"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="top|center"
+                android:scaleType="fitXY"
+                android:src="@drawable/home_repair_icon"
+                app:tint="#6C63FF" />
+
+            <TextView
+                android:id="@+id/repair_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="8dp"
+                android:text="Sửa chữa"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="italic|bold" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/notification_frame"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/student_frame"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="28dp"
+            android:layout_toEndOf="@+id/repair_frame"
+            android:background="#D3D0FF">
+
+            <ImageView
+                android:id="@+id/notification_background"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="top|center"
+                android:scaleType="fitXY"
+                android:src="@drawable/notification_bell"
+                app:tint="#6C63FF" />
+
+            <TextView
+                android:id="@+id/notification_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="8dp"
+                android:text="Thông báo"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="italic|bold" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/settings_frame"
+            android:layout_width="150dp"
+            android:layout_height="146dp"
+            android:layout_below="@+id/repair_frame"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="8dp"
+            android:background="#D3D0FF">
+
+            <ImageView
+                android:id="@+id/settings_background"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="top|center"
+                android:scaleType="fitXY"
+                android:src="@drawable/settings"
+                app:tint="#6C63FF" />
+
+            <TextView
+                android:id="@+id/settings_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="8dp"
+                android:text="Cài đặt"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="italic|bold" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/device_frame"
+            android:layout_width="151dp"
+            android:layout_height="149dp"
+            android:layout_below="@+id/settings_frame"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="9dp"
+            android:background="#D3D0FF">
+
+            <ImageView
+                android:id="@+id/device_background"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="top|center"
+                android:scaleType="fitXY"
+                android:src="@drawable/bedroom_furniture_equipment"
+                app:tint="#6C63FF" />
+
+            <TextView
+                android:id="@+id/device_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="8dp"
+                android:text="Thiết bị"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="italic|bold" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/service_frame"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/notification_frame"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="28dp"
+            android:layout_toEndOf="@+id/settings_frame"
+            android:background="#D3D0FF">
+
+            <ImageView
+                android:id="@+id/service_background"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="top|center"
+                android:scaleType="fitXY"
+                android:src="@drawable/customer_service"
+                app:tint="#6C63FF" />
+
+            <TextView
+                android:id="@+id/service_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="8dp"
+                android:text="Dịch vụ"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="italic|bold" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/student_frame"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="188dp"
+            android:layout_marginEnd="28dp"
+            android:layout_toEndOf="@+id/dashboard_frame"
+            android:background="#D3D0FF">
+
+            <ImageView
+                android:id="@+id/student_background"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="top|center"
+                android:scaleType="fitXY"
+                android:src="@drawable/_43707_search_512x512"
+                app:tint="#6C63FF" />
+
+            <TextView
+                android:id="@+id/student_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="8dp"
+                android:text="Sinh viên"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="italic|bold" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/logout_frame"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="279dp"
+            android:layout_marginTop="95dp"
+            android:layout_marginEnd="3dp"
+            android:background="#D3D0FF">
+
+            <ImageView
+                android:id="@+id/logout_background"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="left|center"
+                android:scaleType="fitXY"
+                android:src="@drawable/logout_svgrepo_com"
+                app:tint="#6C63FF" />
+
+            <TextView
+                android:id="@+id/logout_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:layout_marginBottom="8dp"
+                android:text="Đăng xuất"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="italic|bold" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/RoomChange_frame"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/student_frame"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="333dp"
+            android:layout_marginEnd="28dp"
+            android:layout_toEndOf="@+id/repair_frame"
+            android:background="#D3D0FF">
+
+            <ImageView
+                android:id="@+id/RoomChange_background"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="top|center"
+                android:scaleType="fitXY"
+                android:src="@drawable/_kb0ako6e2eis82fytd1mpd1o8j"
+                app:tint="#6C63FF" />
+
+            <TextView
+                android:id="@+id/RoomChange_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="8dp"
+                android:text="Chuyển phòng"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="italic|bold" />
+        </FrameLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

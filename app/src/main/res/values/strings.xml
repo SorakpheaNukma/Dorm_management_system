@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Managerment</string>
+    <!-- Welcome Message -->
+    <string name="welcome_message">Admin\nXin chào, Admin</string>
+
+    <!-- Button Labels -->
+    <string name="home_button">Trang chủ</string>
+    <string name="dashboard_button">Dashboard</string>
+    <string name="student_button">Sinh viên</string>
+    <string name="repair_button">Sửa chữa</string>
+    <string name="notification_button">Thông báo</string>
+    <string name="settings_button">Cài đặt</string>
+    <string name="service_button">Dịch vụ</string>
+    <string name="device_button">Thiết bị</string>
+    <string name="logout_button">Đăng xuất</string>
+
+
+    <string-array name="house_options">
+        <item>K1</item>
+        <item>K2</item>
+        <item>K3</item>
+        <item>K4</item>
+        <item>K5</item>
+        <item>K6</item>
+        <item>A1</item>
+        <item>A2</item>
+        <item>A3</item>
+        <!-- Add more options as needed -->
+    </string-array>
+</resources>
